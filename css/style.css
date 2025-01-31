@@ -631,6 +631,32 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .footer-top {
+    padding-bottom: 30px;
+  }
+
+  .footer-logo-box {
+    margin-bottom: 20px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-address {
+    margin-bottom: 0;
+  }
+
+  .footer-schedule {
+    align-self: start;
+  }
 }
 
 @media screen and (min-width: 1000px) {
