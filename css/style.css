@@ -451,6 +451,12 @@ body {
     /* padding: 0 12px; */
   }
 
+  .header-content-text {
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 74px;
+  }
+
   .products-title {
     font-size: 64px;
     line-height: 68px;
@@ -472,6 +478,72 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .header-top {
+    flex-wrap: nowrap;
+  }
+
+  .header-logo-box {
+    flex-basis: 240px;
+  }
+
+  .header-menu {
+    order: 2;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-menu-list {
+    position: relative;
+    transform: translateX(0);
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .header-menu-link {
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .header-menu-link:hover {
+    color: #3f62ec;
+  }
+
+  .header-content {
+    padding: 50px 0 100px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-transform: uppercase;
+  }
+
+  .header-content-logos {
+    gap: 30px;
+  }
+
+  .header-content-img-deye {
+    width: 40%;
+  }
+
+  .header-content-img-felicity {
+    width: 70%;
+  }
+
+  .header-content-subtitles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-content-subtitle + .header-content-subtitle {
+    margin-top: 0;
   }
 
   .products-title {
@@ -529,6 +601,32 @@ body {
     max-width: 100%;
   }
 
+  .header-menu-list {
+    gap: 24px;
+  }
+
+  .header-menu-link {
+    font-size: 20px;
+  }
+
+  .header-content-img-deye {
+    max-width: 300px;
+  }
+
+  .header-content-img-felicity {
+    max-width: 500px;
+  }
+
+  .header-content-text {
+    font-size: 92px;
+    line-height: 92px;
+  }
+
+  .header-content-subtitles {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
   .products-title {
     font-size: 92px;
   }
@@ -550,5 +648,12 @@ body {
     font-size: 56px;
     line-height: 62px;
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
